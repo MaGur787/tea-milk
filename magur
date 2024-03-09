@@ -1,0 +1,14 @@
+// Helper function to calculate the square of a number
+function square(number) {
+  return number * number;
+}
+
+// Helper function to find the sum of squares for an array of numbers
+function sumOfSquares(numbers) {
+  return numbers.reduce((sum, num) => sum + square(num), 0);
+}
+
+// Example usage
+const numbersArray = [1, 2, 3, 4, 5];
+const result = sumOfSquares(numbersArray);
+console.log("Sum of squares:", result);
